@@ -217,9 +217,16 @@ return {
     headers: { "Content-Type": photoFromS3.ContentType },
     statusCode: 200,
 
-    // This is the magic! 
     // API Gateway now knows to decode the body before serving!
     isBase64Encoded: true,
     body: photoFromS3.Body.toString('base64'),
 }
 ```
+
+---
+<!-- _class: lead -->
+# That's all!
+
+Thanks for watching.
+
+https://github.com/nie7321/tf-tips-and-tricks
